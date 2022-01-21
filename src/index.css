@@ -1,13 +1,118 @@
+/* MULTIPLE SECTIONS -----------------------------------------*/
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.portfolio-container {
+    margin: 0;
+}
+
+.hero-container,
+.about-container,
+.projects-container,
+.contact-container {
+    height: 100vh;
+    border: 1px solid;
+    margin: 0 15rem;
+}
+
+.about-container,
+.projects-container,
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO -----------------------------------------*/
+
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-container .right,
+.hero-container .left {
+    width: 50%;
+}
+
+/* ABOUT -----------------------------------------*/
+
+.about-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+.about-content .left,
+.about-content .right {
+    width: 50%;
+}
+
+.resume-container {
+    display: flex;
+    align-items: center;
+}
+
+.resume-container a {
+    margin-left: 5rem;
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-container div {
+    border: 1px solid;
+    width: 200px;
+    height: 250px
+}
+
+/* PROJECTS -----------------------------------------*/
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.project {
+    border: 1px solid;
+    width: 250px;
+    height: 400px;
+}
+
+.screenshot {
+    border: 1px solid red;
+    height: 100px;
+}
+
+/* CONTACT -----------------------------------------*/
+ 
+.contact-content {
+    margin: auto 15rem;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 
+                        "form email"
+                        "form image";
+}
+
+.form,
+.email,
+.image {
+    border: 1px solid;
+}
+
+.form {
+    grid-area: form;
+}
+
+.email {
+    grid-area: email;
+}
+
+.image {
+    grid-area: image;
 }
