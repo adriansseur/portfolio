@@ -35,6 +35,28 @@ body {
     width: 50%;
 }
 
+.hero-container .right img {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+.dev {
+    border: 1px solid white;
+    position: absolute;
+    top: 250px;
+    animation: hoverChair 1.5s ease-in-out 0s infinite alternate;
+}
+
+.desk {
+    border: 1px solid white;
+}
+
+@keyframes hoverChair {
+    0% {transform: rotate(5deg)}
+    100% {transform: rotate(-5deg)}
+}
+
 /* ABOUT -----------------------------------------*/
 
 .about-content {

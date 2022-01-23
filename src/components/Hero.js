@@ -1,6 +1,9 @@
 import React from "react"
+import dev from "../images/dev.png"
+import desk from "../images/desk.png"
 
 export default function Hero() {
+
     return (
         <div className="hero-container">
             <div className="left">
@@ -18,7 +21,10 @@ export default function Hero() {
                     <button>Contact</button>
                 </div>
             </div>
-            <div className="right">Image</div>
+            <div className="right">
+                <img className="desk" src={desk} alt="desk"></img>
+                <img className="dev" src={dev} alt="dev"></img>
+            </div>
         </div>
     )
 }
