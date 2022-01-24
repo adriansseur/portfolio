@@ -13,7 +13,7 @@ body {
 .contact-container {
     height: 100vh;
     border: 1px solid;
-    margin: 0 15rem;
+    padding: 0 15rem;
 }
 
 .about-container,
@@ -28,6 +28,8 @@ body {
 .hero-container {
     display: flex;
     align-items: center;
+    color: orange;
+    background: #2f2a25;
 }
 
 .hero-container .right,
@@ -36,20 +38,20 @@ body {
 }
 
 .hero-container .right img {
-    width: 500px;
-    height: 500px;
+    width: calc(2388px*.38);
+    height: calc(1668px*.38);
     display: block;
 }
 
 .dev {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     position: absolute;
-    top: 250px;
-    animation: hoverChair 1.5s ease-in-out 0s infinite alternate;
+    top: 170px;
+    animation: hoverChair 2s ease-in-out 0s infinite alternate;
 }
 
 .desk {
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 @keyframes hoverChair {
