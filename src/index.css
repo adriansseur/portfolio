@@ -12,8 +12,7 @@ body {
 .projects-container,
 .contact-container {
     height: 100vh;
-    border: 1px solid;
-    padding: 0 15rem;
+    padding: 0 10rem;
 }
 
 .about-container,
@@ -23,13 +22,22 @@ body {
     flex-direction: column;
 }
 
+.hero-container,
+.projects-container {
+    background: #b3e5ff;
+}
+
+.about-container,
+.contact-container {
+    background: #ffeba2;
+}
+
 /* HERO -----------------------------------------*/
 
 .hero-container {
     display: flex;
     align-items: center;
-    color: orange;
-    background: #2f2a25;
+
 }
 
 .hero-container .right,
@@ -38,25 +46,28 @@ body {
 }
 
 .hero-container .right img {
-    width: calc(2388px*.38);
-    height: calc(1668px*.38);
-    display: block;
+    width: calc(1418px*.55);
+    height: calc(1498px*.55);
 }
 
 .dev {
-    /* border: 1px solid white; */
     position: absolute;
-    top: 170px;
-    animation: hoverChair 2s ease-in-out 0s infinite alternate;
+    right: 250px;
+    animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
 }
 
 .desk {
-    /* border: 1px solid white; */
+    animation: hoverDesk 3s ease-in-out 0s infinite alternate;
 }
 
 @keyframes hoverChair {
     0% {transform: rotate(5deg)}
+    50% {transform: translate(20px, -30px)}
     100% {transform: rotate(-5deg)}
+}
+
+@keyframes hoverDesk {
+    to {transform: translateX(10px); width: calc(1418px*.555); height: calc(1498px*.555)}
 }
 
 /* ABOUT -----------------------------------------*/
