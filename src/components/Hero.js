@@ -1,6 +1,7 @@
 import React from "react"
 import dev from "../images/dev.png"
 import desk from "../images/desk.png"
+import {Link} from "react-scroll"
 
 export default function Hero() {
 
@@ -15,10 +16,10 @@ export default function Hero() {
                     <a href="#">Twitter</a>
                     <a href="#">YouTube</a>
                 </div>
-                <div className="sections-buttons">
-                    <button>About</button>
-                    <button>Projects</button>
-                    <button>Contact</button>
+                <div className="section-links">
+                    <Link className="section-link" to="about-container" smooth={true} duration={1000}>About</Link>
+                    <Link className="section-link" to="projects-container" smooth={true} duration={1000}>Projects</Link>
+                    <Link className="section-link" to="contact-container" smooth={true} duration={1000}>Contact</Link>
                 </div>
             </div>
             <div className="right">

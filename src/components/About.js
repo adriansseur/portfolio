@@ -3,7 +3,7 @@ import kitchen from "../images/kitchen.png"
 
 export default function About() {
     return (
-        <div className="about-container">
+        <div className="about-container" id="about-container">
             <h1>About</h1>
             <div className="about-content">
                 <div className="left">

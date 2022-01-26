@@ -37,12 +37,16 @@ body {
 .hero-container {
     display: flex;
     align-items: center;
-
 }
 
 .hero-container .right,
 .hero-container .left {
     width: 50%;
+    border: 1px solid;
+}
+
+.section-links {
+    border: 1px solid red;
 }
 
 .hero-container .right img {

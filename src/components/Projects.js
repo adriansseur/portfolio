@@ -3,7 +3,7 @@ import React from "react"
 export default function Projects() {
     return (
         // must simpify, make projectsData.js file from which to pull all of this
-        <div className="projects-container">
+        <div className="projects-container" id="projects-container">
             <h1>Projects</h1>
             <div className="projects-content">
                 <div className="project">
