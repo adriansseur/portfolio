@@ -1,47 +1,31 @@
 import React from "react"
+import data from "../projects_data"
 
 export default function Projects() {
+
+    const projectElements = data.map(project => {
+        return (
+            <div className="project">
+                <div className="screenshot">
+                    <img src={process.env.PUBLIC_URL + project.screenshot} alt="screenshot of project"></img>
+                </div>
+                <div className="project-text-container">
+                    <p>{project.name}</p>
+                    <p>{project.description}</p>
+                    <div className="link-container">
+                        <a href={project.codeLink} target="_blank">Code</a>
+                        <a href={project.demoLink} target="_blank">Demo</a>
+                    </div>
+                </div>
+            </div>
+        )
+    })
+
     return (
-        // must simpify, make projectsData.js file from which to pull all of this
         <div className="projects-container" id="projects-container">
             <h1>Projects</h1>
             <div className="projects-content">
-                <div className="project">
-                    <p>Study Tool</p>
-                    <div className="screenshot">Screenshot</div>
-                    <p>A digital whiteboard to track MCAT studies.</p>
-                    <div className="buttons-container">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
-                <div className="project">
-                    <p>Word Game</p>
-                    <div className="screenshot">Screenshot</div>
-                    <p>Can you pronounce words from Merriam-Webster's Medical Dictionary? Copy this if you're going to the Demo (you'll need it): _____</p>
-                    <div className="buttons-container">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
-                <div className="project">
-                    <p>YouTube Video Sources</p>
-                    <div className="screenshot">Screenshot</div>
-                    <p>A better version of a Kurzgesagt video sources ("further reading") page.</p>
-                    <div className="buttons-container">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
-                <div className="project">
-                    <p>Cosmic Calendar Calculator</p>
-                    <div className="screenshot">Screenshot</div>
-                    <p>A tribute to Carl Sagan's concept of compressing all of time into a single calendar year.</p>
-                    <div className="buttons-cona">
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
+                {projectElements}
             </div>
         </div>
     )

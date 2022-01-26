@@ -172,22 +172,50 @@ body {
 
 /* PROJECTS -----------------------------------------*/
 
+.projects-container {
+    /* border: 1px solid red; */
+}
+
 .projects-content {
     display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    margin-bottom: auto;
+    flex-direction: column;
 }
 
 .project {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 5px;
+    display: flex;
     border: 1px solid;
-    width: 250px;
-    height: 400px;
+
 }
 
 .screenshot {
-    border: 1px solid red;
-    height: 100px;
+    /* padding-left: 1rem; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* height: 100%; */
+}
+
+.screenshot img {
+    width: 100px;
+}
+
+.project-text-container {
+    margin-left: 1rem;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-container a {
+    text-decoration: none;
+    background: #ffeba2;
+    padding: 0.5rem 1rem;
 }
 
 /* CONTACT -----------------------------------------*/
