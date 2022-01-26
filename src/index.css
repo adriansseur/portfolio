@@ -1,6 +1,7 @@
 /* MULTIPLE SECTIONS -----------------------------------------*/
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-container {
@@ -12,7 +13,6 @@ body {
 .projects-container,
 .contact-container {
     height: 100vh;
-    padding: 0 10rem;
 }
 
 .about-container,
@@ -35,33 +35,82 @@ body {
 /* HERO -----------------------------------------*/
 
 .hero-container {
+    padding: 0 50px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
 }
 
-.hero-container .right,
-.hero-container .left {
-    width: 50%;
-    border: 1px solid;
+.name {
+    margin: 0;
+    color: red;
 }
 
-.section-links {
-    border: 1px solid red;
+.title {
+    margin: 0;
+    color: purple;
+    font-size: 28px;
 }
 
-.hero-container .right img {
-    width: calc(1418px*.55);
-    height: calc(1498px*.55);
+.socials a {
+    margin-right: 10px;
 }
 
-.dev {
-    position: absolute;
-    right: 250px;
-    animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
+.hero-container .images-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-container img {
+    width: 100%;
+    height: 100%;
 }
 
 .desk {
     animation: hoverDesk 3s ease-in-out 0s infinite alternate;
+}
+
+.dev {
+    animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
+    position: absolute;
+}
+
+.section-links {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-links a {
+    background: #ffeba2;
+    padding: .5rem 1rem;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07)
+        ;
+
+}
+
+.section-links a:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow:
+        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
+        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
+        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
+        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
+        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
+        21px 25px 80px rgba(0, 0, 0, 0.3)
+        ;
+
 }
 
 @keyframes hoverChair {
@@ -71,7 +120,7 @@ body {
 }
 
 @keyframes hoverDesk {
-    to {transform: translateX(10px); width: calc(1418px*.5); height: calc(1498px*.5)}
+    to {transform: translateX(10px)}
 }
 
 /* ABOUT -----------------------------------------*/

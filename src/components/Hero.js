@@ -7,24 +7,22 @@ export default function Hero() {
 
     return (
         <div className="hero-container">
-            <div className="left">
-                <p>Hello, I'm Adrian</p>
-                <h1>Front-End Developer</h1>
-                <div className="socials">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Github</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">YouTube</a>
-                </div>
-                <div className="section-links">
-                    <Link className="section-link" to="about-container" smooth={true} duration={1000}>About</Link>
-                    <Link className="section-link" to="projects-container" smooth={true} duration={1000}>Projects</Link>
-                    <Link className="section-link" to="contact-container" smooth={true} duration={1000}>Contact</Link>
-                </div>
+            <p className="name">Hello, I'm Adrian</p>
+            <h1 className="title">Front-End Developer</h1>
+            <div className="socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div className="right">
+            <div className="images-container">
                 <img className="desk" src={desk} alt="desk"></img>
                 <img className="dev" src={dev} alt="dev"></img>
+            </div>
+            <div className="section-links">
+                <Link className="section-link" to="about-container" smooth={true} duration={1000}>About</Link>
+                <Link className="section-link" to="projects-container" smooth={true} duration={1000}>Projects</Link>
+                <Link className="section-link" to="contact-container" smooth={true} duration={1000}>Contact</Link>
             </div>
         </div>
     )
