@@ -67,7 +67,7 @@ body {
 }
 
 @keyframes hoverDesk {
-    to {transform: translateX(10px); width: calc(1418px*.555); height: calc(1498px*.555)}
+    to {transform: translateX(10px); width: calc(1418px*.5); height: calc(1498px*.5)}
 }
 
 /* ABOUT -----------------------------------------*/
@@ -81,6 +81,11 @@ body {
 .about-content .left,
 .about-content .right {
     width: 50%;
+}
+
+.kitchen {
+    width: calc(1588px*.37);
+    height: calc(983px*.37);
 }
 
 .resume-container {
