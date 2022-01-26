@@ -7,7 +7,7 @@ export default function About() {
             <h1>About</h1>
             <div className="about-content">
                 <p className="about-text">I am highly motivated and great in a group. I like science, coffee, and chocolate chip cookies. </p>
-                <a src="#">Resume</a>
+                <a href="#">Resume</a>
                 <div className="highlights-container">
                     <div className="education">
                         <p>Education</p>
