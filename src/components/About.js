@@ -6,22 +6,29 @@ export default function About() {
         <div className="about-container" id="about-container">
             <h1>About</h1>
             <div className="about-content">
-                <div className="left">
-                    <img className="kitchen" src={kitchen} alt="a technological kitchen"></img>
-                </div>
-                <div className="right">
-                    <p>I am highly motivated to work on building things for the web. I enjoy working with others, learning through executing, and taking responsibility for my projects. I like science, coffee, and chocolate chip cookies way too much.</p>
-                    <div className="resume-container">
-                        <p>Looking for this?</p>
-                        <a src="#">Resume</a>
+                <p className="about-text">I am highly motivated and great in a group. I like science, coffee, and chocolate chip cookies. </p>
+                <a src="#">Resume</a>
+                <div className="highlights-container">
+                    <div className="education">
+                        <p>Education</p>
+                        <ul>
+                            <li>Scrimba's Front-End Developer Career Path</li>
+                            <li>Bachelor's Degree</li>
+                        </ul>
                     </div>
-                    <div className="highlights-container">
-                        <div className="education">Education</div>
-                        <div className="tech-stack">Tech Stack</div>
-                        <div className="languages">Languages</div>
+                    <div className="tech-stack">
+                        <p>Tech Stack</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Git</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <img className="kitchen" src={kitchen} alt="a technological kitchen"></img>
         </div>
     )
 }

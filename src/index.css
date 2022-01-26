@@ -13,6 +13,7 @@ body {
 .projects-container,
 .contact-container {
     height: 100vh;
+    padding: 0 50px;
 }
 
 .about-container,
@@ -35,7 +36,6 @@ body {
 /* HERO -----------------------------------------*/
 
 .hero-container {
-    padding: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -82,7 +82,6 @@ body {
     margin-top: 10vh;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .section-links a {
@@ -127,40 +126,48 @@ body {
 
 /* ABOUT -----------------------------------------*/
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
 .about-content {
-    margin-top: auto;
-    margin-bottom: auto;
+    /* margin: auto 0; */
     display: flex;
+    flex-direction: column;
+    /* margin: auto 0; */
+    /* height: 85vh; */
+    /* border: 1px solid; */
 }
 
-.about-content .left,
-.about-content .right {
-    width: 50%;
+.about-text {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: red;
+    font-size: 16px;
 }
 
-.kitchen {
-    width: calc(1588px*.37);
-    height: calc(983px*.37);
-}
-
-.resume-container {
-    display: flex;
-    align-items: center;
-}
-
-.resume-container a {
-    margin-left: 5rem;
+.about-content a {
+    background: white;
+    padding: 0.5rem 1rem;
+    width: fit-content;
 }
 
 .highlights-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .highlights-container div {
+    margin-top: 1rem;
     border: 1px solid;
-    width: 200px;
-    height: 250px
+    height: fit-content;
+}
+
+.kitchen {
+    margin: auto 0;
+    width: 100%;
 }
 
 /* PROJECTS -----------------------------------------*/
