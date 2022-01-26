@@ -79,13 +79,15 @@ body {
 }
 
 .section-links {
-    margin-top: 100px;
+    margin-top: 10vh;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 
 .section-links a {
     background: #ffeba2;
+    margin: 0.4rem;
     padding: .5rem 1rem;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
