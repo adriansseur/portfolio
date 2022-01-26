@@ -129,16 +129,11 @@ body {
 .about-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
 }
 
 .about-content {
-    /* margin: auto 0; */
     display: flex;
     flex-direction: column;
-    /* margin: auto 0; */
-    /* height: 85vh; */
-    /* border: 1px solid; */
 }
 
 .about-text {
@@ -172,10 +167,6 @@ body {
 
 /* PROJECTS -----------------------------------------*/
 
-.projects-container {
-    /* border: 1px solid red; */
-}
-
 .projects-content {
     display: flex;
     flex-direction: column;
@@ -192,11 +183,8 @@ body {
 }
 
 .screenshot {
-    /* padding-left: 1rem; */
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
-    /* height: 100%; */
 }
 
 .screenshot img {
