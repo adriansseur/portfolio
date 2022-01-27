@@ -207,30 +207,7 @@ body {
 }
 
 /* CONTACT -----------------------------------------*/
- 
-.contact-content {
-    margin: auto 15rem;
-    height: 600px;
-    display: grid;
-    grid-template-areas: 
-                        "form email"
-                        "form image";
-}
-
-.form,
-.email,
-.image {
-    border: 1px solid;
-}
 
 .form {
-    grid-area: form;
-}
-
-.email {
-    grid-area: email;
-}
-
-.image {
-    grid-area: image;
+    border: 1px solid;
 }
