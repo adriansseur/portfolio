@@ -12,7 +12,7 @@ body {
 .about-container,
 .projects-container,
 .contact-container {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 50px;
 }
 
