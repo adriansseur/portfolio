@@ -211,3 +211,45 @@ body {
 .form {
     border: 1px solid;
 }
+
+.contact-container .images-container {
+    border: 1px solid;
+    position: relative;
+}
+
+.contact-container .images-container img {
+    width: 100%;
+    position: absolute;
+}
+
+.left-arm {
+    animation: moveLeftArm 1.5s linear 0s infinite alternate;
+}
+
+.right-arm {
+    animation: moveRightArm 1.5s linear 1s infinite alternate;
+}
+
+.yellow-book {
+    animation: hoverYellowBook 2s linear 0s infinite alternate;    
+}
+
+.blue-book {
+    animation: hoverBlueBook 2s linear 1s infinite alternate;    
+}
+
+@keyframes moveLeftArm {
+    to {transform: rotate(10deg) translateX(10px)}
+}
+
+@keyframes moveRightArm {
+    to {transform: rotate(-15deg) translateX(-15px)}
+}
+
+@keyframes hoverYellowBook {
+    to {transform: translate(5px, 5px) rotate(10deg)}
+}
+
+@keyframes hoverBlueBook {
+    to {transform: translate(5px, 5px) rotate(10deg)}
+}
