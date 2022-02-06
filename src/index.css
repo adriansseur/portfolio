@@ -45,6 +45,7 @@ body {
 .name {
     margin: 0;
     color: #0a0b0a;
+    font-weight: 400;
 }
 
 .title {
@@ -56,8 +57,8 @@ body {
 
 .socials a {
     margin-right: 1rem;
-    color: #00222b;
-    font-size: 1.25rem;
+    color: #6a5b3e;
+    font-size: 1rem;
 }
 
 .hero-container .images-container {
@@ -323,7 +324,6 @@ body {
 
 .form {
     height: fit-content;
-    border: 1px solid;
     border-radius: 5px;
     padding: 2rem 1rem;
     background: white;
@@ -334,8 +334,8 @@ body {
     margin-bottom: 1rem;
     box-sizing: border-box;
     width: 100%;
-    background: lightsalmon;
-    border: 1px solid;
+    background: #b0a372;
+    border: none;
     border-radius: 5px;
     padding: 0.5rem 0.5rem;
 }
@@ -358,10 +358,32 @@ body {
     margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
-    background: lightblue;
+    background: rgb(0,204,254);
+    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%);
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     border: none;
+}
+
+.form button:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow:
+        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
+        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
+        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
+        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
+        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
+        21px 25px 80px rgba(0, 0, 0, 0.3)
+        ;
 }
 
 .contact-container .images-container {
