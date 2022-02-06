@@ -92,7 +92,7 @@ body {
     background: rgb(255,188,66);
     background: linear-gradient(0deg, rgba(255,188,66,1) 7%, rgba(255,227,161,1) 38%, rgba(246,248,247,1) 81%);
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0.5rem 0;
     padding: .5rem 1rem;
     box-shadow:
@@ -146,14 +146,31 @@ body {
 .about-text {
     margin: 0;
     margin-bottom: 1rem;
-    color: red;
+    color: black;
     font-size: 16px;
 }
 
+.about-content strong {
+    color: #4f7b8a;
+}
+
 .about-content a {
-    background: white;
+    text-decoration: none;
+    color: black;
+    background: rgb(0,204,254);
+    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%);
+    font-weight: 700;
+    border-radius: 5px;
     padding: 0.5rem 1rem;
     width: fit-content;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07)
+        ;
 }
 
 .highlights-container {
@@ -163,13 +180,35 @@ body {
 
 .highlights-container div {
     margin-top: 1rem;
-    border: 1px solid;
+    background: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
     height: fit-content;
 }
 
+.highlights-container p {
+    border-bottom: 1px solid #d4c183;
+}
+
+.highlights-container div ul li{
+    margin: 0.5rem 0;
+}
+
 .kitchen {
-    margin: auto 0;
+    margin: 2rem 0;
     width: 100%;
+}
+
+@media (min-width: 400px) {
+    .tech-stack-grid {
+        display: grid;
+        grid-template: auto auto auto auto / auto auto;
+        grid-auto-flow: column;
+    }
+
+    .highlights-container div ul li {
+        margin: 0.25rem 0;
+    }
 }
 
 /* PROJECTS -----------------------------------------*/
