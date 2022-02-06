@@ -13,8 +13,8 @@ export default function Projects() {
                     <p>{project.name}</p>
                     <p>{project.description}</p>
                     <div className="link-container">
-                        <a href={project.codeLink} target="_blank">Code</a>
-                        <a href={project.demoLink} target="_blank">Demo</a>
+                        <a className="link-code" href={project.codeLink}>Code</a>
+                        <a href={project.demoLink}>Demo</a>
                     </div>
                 </div>
             </div>
