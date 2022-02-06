@@ -44,17 +44,20 @@ body {
 
 .name {
     margin: 0;
-    color: red;
+    color: #0a0b0a;
 }
 
 .title {
-    margin: 0;
-    color: purple;
+    margin: 0.25rem 0;
+    color: #0a0b0a;
     font-size: 28px;
+    text-shadow: 2px 2px #aebabb;
 }
 
 .socials a {
-    margin-right: 10px;
+    margin-right: 1rem;
+    color: #00222b;
+    font-size: 1.25rem;
 }
 
 .hero-container .images-container {
@@ -79,14 +82,18 @@ body {
 }
 
 .section-links {
-    margin-top: 10vh;
+    margin-top: 8vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section-links a {
-    background: #ffeba2;
-    margin: 0.4rem;
+    background: rgb(255,188,66);
+    background: linear-gradient(0deg, rgba(255,188,66,1) 7%, rgba(255,227,161,1) 38%, rgba(246,248,247,1) 81%);
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 0.5rem 0;
     padding: .5rem 1rem;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
