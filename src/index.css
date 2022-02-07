@@ -33,6 +33,16 @@ body {
     background: #ffeba2;
 }
 
+@media (min-width: 768px) {
+
+    .about-container,
+    .projects-container,
+    .contact-container {
+        min-height: fit-content;
+        padding: 10%;
+    }
+}
+
 /* HERO -----------------------------------------*/
 
 .hero-container {
@@ -248,31 +258,33 @@ body {
         position: relative;
     }
 
+    .about-container h1 {
+        margin: 0;
+    }
+
+    .about-content {
+        position: relative;
+    }
+
     .about-container p {
+        margin-top: 5%;
         margin-left: auto;
     }
 
     .about-container a {
-        margin: 0 17% 4rem auto;
-    }
-
-    .about-content {
-        margin: auto 0;
+        margin: 1rem 17% 5rem auto;
     }
 
     .about-text {
         width: 47%;
-        text-align: left;
     }
 
     .about-container img {
         width: 300px;
         position: absolute;
-        top: 60px;
     }
 
     .highlights-container {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -280,7 +292,6 @@ body {
     .education,
     .tech-stack {
         width: 43%;
-        margin-bottom: 1rem;
     }
 }
 

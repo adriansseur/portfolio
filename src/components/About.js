@@ -31,8 +31,8 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
+                <img className="kitchen" src={kitchen} alt="a technological kitchen"></img>
             </div>
-            <img className="kitchen" src={kitchen} alt="a technological kitchen"></img>
         </div>
     )
 }
