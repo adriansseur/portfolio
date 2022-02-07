@@ -244,7 +244,6 @@ body {
 @media (min-width: 768px) {
     .about-container {
         position: relative;
-        border: 1px solid red;
     }
 
     .about-container p {
@@ -279,6 +278,7 @@ body {
     .education,
     .tech-stack {
         width: 43%;
+        margin-bottom: 1rem;
     }
 }
 
@@ -300,8 +300,6 @@ body {
 .screenshot {
     display: flex;
     align-items: center;
-    /* overflow: scroll; */
-    /* border: 1px solid red; */
 }
 
 .screenshot img {
@@ -310,10 +308,6 @@ body {
     object-fit: cover;
     object-position: 0% 30%;
 }
-
-/* .project-text-container {
-    border: 1px solid;
-} */
 
 .link-container {
     display: flex;
@@ -327,8 +321,6 @@ body {
     text-decoration: none;
     background: #ffeba2;
     background: linear-gradient(0deg, #ffbc42 17%, #ffeba2 89%);
-    /* background: rgb(255,188,66);
-    background: linear-gradient(0deg, rgba(255,188,66,1) 9%, rgba(255,230,153,1) 62%, rgba(255,255,255,1) 89%); */
     padding: 0.5rem 1rem;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -362,11 +354,6 @@ body {
         display: flex;
     }
 
-    .screenshot {
-        height: auto;
-        width: auto;
-    }
-
     .screenshot img {
         height: initial;
         width: 100px;
@@ -374,6 +361,43 @@ body {
 
     .project-text-container {
         margin-left: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-content {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 400px;
+        margin-bottom: 1rem;
+    }
+
+    .project {
+        flex-direction: column;
+        justify-content: center;
+        width: 27%;
+        margin-bottom: 0;
+    }
+
+    .project-text-container {
+        height: 55%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .screenshot img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+        object-position: 0% 30%;
     }
 }
 
