@@ -515,3 +515,34 @@ body {
 @keyframes hoverBlueBook {
     to {transform: translate(5px, 5px) rotate(10deg)}
 }
+
+@media (min-width: 420px) {
+    .contact-container .images-container img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contact-container {
+        position: relative;
+    }
+
+    .form {
+        margin-left: 2rem;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-container .images-container {
+        position: absolute;
+        display: block;
+        width: 85%;
+        height: 75%;
+    }
+    .contact-container .images-container img {
+        width: 250px;
+        right: 0;
+        bottom: 0;
+    }
+}
