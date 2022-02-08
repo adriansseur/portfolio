@@ -440,6 +440,7 @@ body {
     border: none;
     border-radius: 5px;
     padding: 0.5rem 0.5rem;
+    font-size: 1rem;
 }
 
 .form input::placeholder,
@@ -460,8 +461,10 @@ body {
     margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
+    /* background: rgb(0,204,254);
+    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%); */
     background: rgb(0,204,254);
-    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%);
+    background: linear-gradient(0deg, rgba(0,204,254,1) 9%, rgba(174,224,251,1) 62%);
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -473,6 +476,7 @@ body {
     font-size: 1rem;
     font-weight: 700;
     border: none;
+    color: black;
 }
 
 .form button:active {
@@ -549,6 +553,10 @@ body {
         position: relative;
     }
 
+    .contact-container h1 {
+        margin-top: 0;
+    }
+
     .form {
         margin-left: 2rem;
         width: 50%;
@@ -557,8 +565,11 @@ body {
 
     .contact-container .images-container {
         position: absolute;
+        right: 10%;
+        bottom: 10%;
         display: block;
-        width: 85%;
+        width: fit-content;
+        height: fit-content;
         height: 75%;
     }
     .contact-container .images-container img {
