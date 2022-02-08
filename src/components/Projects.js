@@ -10,7 +10,7 @@ export default function Projects() {
                     <img src={process.env.PUBLIC_URL + project.screenshot} alt="screenshot of project"></img>
                 </div>
                 <div className="project-text-container">
-                    <p>{project.name}</p>
+                    <p className="project-name">{project.name}</p>
                     <p>{project.description}</p>
                     <div className="link-container">
                         <a className="link-code" href={project.codeLink}>Code</a>
