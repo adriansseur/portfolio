@@ -265,8 +265,12 @@ body {
     margin: 0.5rem 0;
 }
 
-.kitchen {
+.about-content .images-container {
     margin: 2rem 0;
+    width: 100%;
+}
+
+.about-content img {
     width: 100%;
 }
 
@@ -302,15 +306,16 @@ body {
     }
 
     .about-container a {
-        margin: 1rem 17% 5rem auto;
+        margin: 1rem 17% 10vw auto;
     }
 
     .about-text {
         width: 47%;
     }
 
-    .about-container img {
-        width: 300px;
+    .about-container .images-container {
+        margin-left: 3%;
+        width: 35%;
         position: absolute;
     }
 
@@ -322,6 +327,27 @@ body {
     .education,
     .tech-stack {
         width: 43%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about-content,
+    .about-content p {
+        font-size: 1.25rem;
+    }
+
+    .about-content .about-text {
+        width: 45%;
+    }
+
+    .highlights-container div {
+        width: 40%;
+        padding: 1rem 2rem;
+    }
+
+    .about-container a {
+        margin: 5% 17% 7vw auto;
     }
 }
 
