@@ -480,11 +480,24 @@ body {
 
 @media (min-width: 1024px) {
 
+    .projects-content {
+        height: 550px;
+    }
+
     .project {
         border-radius: 10px;
-        width: 17%;
+        margin: 0 1rem;
         height: 100%;
-        padding: 2rem 3rem;
+        padding: 0 2.5rem;
+        font-size: 1.25rem;
+    }
+
+    .project-name {
+        text-align: center;
+    }
+
+    .link-container {
+        justify-content: space-around;
     }
 }
 
@@ -527,8 +540,6 @@ body {
     margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
-    /* background: rgb(0,204,254);
-    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%); */
     background: rgb(0,204,254);
     background: linear-gradient(0deg, rgba(0,204,254,1) 9%, rgba(174,224,251,1) 62%);
     box-shadow:
@@ -631,8 +642,8 @@ body {
 
     .contact-container .images-container {
         position: absolute;
-        right: 10%;
-        bottom: 10%;
+        right: 10vw;
+        bottom: 10vw;
         display: block;
         width: fit-content;
         height: fit-content;
@@ -642,5 +653,24 @@ body {
         width: 250px;
         right: 0;
         bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .form {
+        width: 35%;
+        margin: 0 auto;
+        position: relative;
+        right: 15%;
+        padding: 2.5rem;
+    }
+
+    .contact-container .images-container {
+        right: 17vw;
+    }
+
+    .contact-container .images-container img {
+        width: 325px;
     }
 }
