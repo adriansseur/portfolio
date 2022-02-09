@@ -666,6 +666,14 @@ body {
         padding: 2.5rem;
     }
 
+    .form input,
+    .form input::placeholder,
+    .form textarea,
+    .form textarea::placeholder,
+    .form button {
+        font-size: 1.25rem;
+    }
+
     .contact-container .images-container {
         right: 17vw;
     }
