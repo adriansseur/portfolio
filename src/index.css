@@ -118,6 +118,11 @@ body {
 
 }
 
+.section-links a:hover {
+    cursor: pointer;
+    color: #00ccfe;
+}
+
 .section-links a:active {
     position: relative;
     top: 3px;
@@ -181,10 +186,6 @@ body {
         font-size: 1.25rem;
     }
 
-    .section-links a:hover {
-        cursor: pointer;
-        color: #00ccfe;
-    }
 }
 
 /* ABOUT -----------------------------------------*/
@@ -554,6 +555,10 @@ body {
     font-weight: 700;
     border: none;
     color: black;
+}
+
+.form button:hover {
+    cursor: pointer;
 }
 
 .form button:active {
