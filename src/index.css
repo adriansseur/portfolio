@@ -478,6 +478,16 @@ body {
     }
 }
 
+@media (min-width: 1024px) {
+
+    .project {
+        border-radius: 10px;
+        width: 17%;
+        height: 100%;
+        padding: 2rem 3rem;
+    }
+}
+
 /* CONTACT -----------------------------------------*/
 
 .form {
