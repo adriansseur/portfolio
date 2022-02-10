@@ -277,6 +277,16 @@ body {
     position: absolute;
 }
 
+.left1,
+.left2,
+.left3 {
+    animation: leftSide 2s linear 0s infinite alternate;
+}
+
+@keyframes leftSide {
+    to {transform: rotate(10deg) translate(-0.9vw, -0.2vw);}
+}
+
 @media (min-width: 400px) {
     .tech-stack-grid {
         display: grid;
@@ -331,6 +341,31 @@ body {
     .tech-stack {
         width: 43%;
     }
+
+    .left1 {
+        animation: left1 2s linear 0s infinite alternate;
+    }
+    
+    .left2 {
+        animation: left2 2s linear 0s infinite alternate;
+    }
+
+    .left3 {
+        animation: left3 2s linear 0s infinite alternate;
+    }
+    
+    @keyframes left1 {
+        to {transform: rotate(10deg) translate(-0.9vw, -0.2vw);}
+    }
+    
+    @keyframes left2 {
+        to {transform: rotate(-10deg) translate(1.3vw, -1.2vw);}
+    }
+
+    @keyframes left3 {
+        to {transform: rotate(-15deg) translate(1.7vw, -1.4vw);}
+    }
+    
 }
 
 @media (min-width: 1024px) {
