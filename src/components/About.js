@@ -1,6 +1,13 @@
 import React from "react"
 import resume from "../Lugo_Adrian_Resume.pdf"
 import kitchen from "../images/kitchen.png"
+import center from "../images/center.png"
+import left1 from "../images/left1.png"
+import left2 from "../images/left2.png"
+import left3 from "../images/left3.png"
+import right1 from "../images/right1.png"
+import right2 from "../images/right2.png"
+import right3 from "../images/right3.png"
 
 export default function About() {
     return (
@@ -33,6 +40,13 @@ export default function About() {
                 </div>
                 <div className="images-container">
                     <img className="kitchen" src={kitchen} alt="a technological kitchen"></img>
+                    <img className="left3" src={left3}></img>
+                    <img className="right3" src={right3}></img>
+                    <img className="left2" src={left2}></img>
+                    <img className="right2" src={right2}></img>
+                    <img className="left1" src={left1}></img>
+                    <img className="right1" src={right1}></img>
+                    <img className="center" src={center}></img>
                 </div>
             </div>
         </div>

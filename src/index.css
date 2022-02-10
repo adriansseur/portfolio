@@ -269,10 +269,12 @@ body {
 .about-content .images-container {
     margin: 2rem 0;
     width: 100%;
+    position: relative;
 }
 
 .about-content img {
     width: 100%;
+    position: absolute;
 }
 
 @media (min-width: 400px) {
