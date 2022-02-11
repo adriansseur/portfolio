@@ -12,6 +12,8 @@ body {
 .about-container,
 .projects-container,
 .contact-container {
+    margin: auto;
+    max-width: 1350px;
     min-height: 100vh;
     padding: 0 10%;
 }
@@ -154,7 +156,7 @@ body {
     .hero-container .images-container {
         width: 35%;
         position: absolute;
-        transform: translateY(-2rem);
+        transform: translate(-1%, -10%);
         right: 10%;
     }
 
@@ -186,6 +188,25 @@ body {
         font-size: 1.25rem;
     }
 
+}
+
+@media (min-width: 1300px) {
+    .hero-container .images-container {
+        max-width: 670px;
+        transform: translate(-10%, -10%);
+    }
+}
+
+@media (min-width: 1900px) {
+    .hero-container .images-container {
+        transform: translate(-20%, -10%);
+    }
+}
+
+@media (min-width: 2400px) {
+    .hero-container .images-container {
+        transform: translate(-50%, -10%);
+    }
 }
 
 /* ABOUT -----------------------------------------*/
