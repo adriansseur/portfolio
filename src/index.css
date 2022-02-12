@@ -441,7 +441,23 @@ body {
     font-weight: 700;
 }
 
+.demo-secret-code {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.demo-secret-code input {
+    padding: 0;
+    width: 50%;
+}
+
+
+.demo-secret-code button {
+    width: 50%
+}
+
 .link-container {
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -510,23 +526,19 @@ body {
     .projects-content {
         flex-direction: row;
         justify-content: space-between;
-        height: 400px;
-        margin-bottom: 1rem;
     }
 
     .project {
         flex-direction: column;
-        justify-content: center;
         width: 27%;
         margin-bottom: 0;
     }
 
     .project-text-container {
-        height: 60%;
+        height: 100%;
         margin-left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .screenshot img {
@@ -535,20 +547,25 @@ body {
         object-fit: cover;
         object-position: 0% 30%;
     }
+
+    .link-container {
+        margin-top: auto;
+    }
 }
 
 @media (min-width: 1024px) {
 
-    .projects-content {
-        height: 550px;
-    }
-
     .project {
         border-radius: 10px;
         margin: 0 1rem;
-        height: 100%;
-        padding: 0 2.5rem;
+        padding: 2.5rem;
+        box-sizing: border-box;
         font-size: 1.25rem;
+    }
+
+    .screenshot img{
+        height: 200px;
+        object-position: 50% 30%;
     }
 
     .project-name {

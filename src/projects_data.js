@@ -9,7 +9,7 @@ export default [
     {
         name: `Word Game`,
         screenshot: `/screenshots/word-game.png`,
-        description: `Try to read obscure words from a medical dictionary. Copy this for the Demo (you'll need it): _____`,
+        description: `Try to read obscure words from a medical dictionary.`,
         codeLink: `https://github.com/adriansseur/Word-Game`,
         demoLink: `https://adriansseur.github.io/Word-Game/`
     },
