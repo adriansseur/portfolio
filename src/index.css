@@ -290,6 +290,7 @@ body {
 .about-content .images-container {
     margin: 2rem 0;
     width: 100%;
+    height: 50vw; /*this fixes overflow*/
     position: relative;
 }
 
