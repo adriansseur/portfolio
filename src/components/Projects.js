@@ -22,23 +22,9 @@ export default function Projects() {
                     <p className="project-name">{project.name}</p>
                     <p>{project.description}</p>
                     {project.name === "Word Game" && [
-                    <div className="demo-secret-code">
-                        <input type="text" value="yipee" id="myInput" style={{display: "none"}}></input>
-                        <button onClick={() => {
-
-                            // works on computer but not on mobile
-                            let copyText = document.getElementById("myInput")
-                            copyText.select()
-                            copyText.setSelectionRange(0, 99999)
-                            navigator.clipboard.writeText(copyText.value)
-                            // .then(() => {
-                            //     alert("Successfully Copied")
-                            // })
-                            // .catch(() => {
-                            //     alert("Something Went Wrong")
-                            // })
-                            
-                            }}>Copy</button>
+                    <div className="secret-code-container">
+                        <p className="secret-code-title">Copy this <span>Secret Code</span> for Demo:</p>
+                        <div className="secret-code">f5038ffa-9e54-4906-b84a-a348b48dcf97</div>
                     </div>
                     ]} 
                     <div className="link-container">

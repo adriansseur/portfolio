@@ -423,7 +423,6 @@ body {
     padding: 0.5rem 1rem;
     background: white;
     border-radius: 5px;
-
 }
 
 .screenshot {
@@ -442,19 +441,27 @@ body {
     font-weight: 700;
 }
 
-.demo-secret-code {
-    display: flex;
-    margin: 2rem 0;
+.secret-code-container {
+    background: #dbe9ef;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-.demo-secret-code input {
-    padding: 0;
-    width: 50%;
+.secret-code-title {
+    margin-top: 0;
 }
 
+.secret-code-title span {
+    font-weight: 700;
+    text-shadow: 2px 2px #ffbc42;
+}
 
-.demo-secret-code button {
-    width: 50%
+.secret-code {
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
 }
 
 .link-container {
