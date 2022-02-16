@@ -1,7 +1,56 @@
 /* MULTIPLE SECTIONS -----------------------------------------*/
+:root {
+    /* color palette */
+    --A1: #cf9441;
+    --A2: #ff9f00;
+    --A3: #ffbc42;
+    --A4: #feeccd;
+    --A5: #fad488;
+    --A6: #6a5b3e;
+    --A7: #ffe3a1;
+    --A8: #8e7e57;
+    --A9: #d4c183;
+    --A10: #b0a372;
+    --B1: #3a3a32;
+    --B2: #21221f;
+    --B3: #0a0b0a;
+    --B4: #747d77; 
+    --B5: #f6f8f7;
+    --B6: #aebabb;
+    --B7: #cdd2d3;
+    --B8: #003746;
+    --B9: #00222b;
+    --B10: #48646b;
+    --C1: #344f57;
+    --C2: #00ccfe;
+    --C3: #4f7b8a;
+    --C4: #dbe9ef;
+    --C5: #004665;
+    --C6: #73919d;
+    --C7: #005b88;
+    --C8: #87a7b8;
+    --C9: #aee0fb;
+    --C10: #94c3dd;
+
+    /* button shadows */
+    --unpressed-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                        100px 100px 80px rgba(0, 0, 0, 0.07);
+    --pressed-shadow: 0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
+                    1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
+                    2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
+                    4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
+                    8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
+                    21px 25px 80px rgba(0, 0, 0, 0.3);
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: var(--B6)
 }
 
 .portfolio-container {
@@ -27,12 +76,12 @@ body {
 
 .hero-container,
 .projects-container {
-    background: #b3e5ff;
+    background: var(--C9);
 }
 
 .about-container,
 .contact-container {
-    background: #ffeba2;
+    background: var(--A7);
 }
 
 @media (min-width: 768px) {
@@ -54,22 +103,25 @@ body {
     justify-content: center;
 }
 
+.name,
+.title {
+    color: var(-B3)
+}
+
 .name {
     margin: 0;
-    color: #0a0b0a;
     font-weight: 400;
 }
 
 .title {
     margin: 0.25rem 0;
-    color: #0a0b0a;
     font-size: 28px;
     text-shadow: 2px 2px #aebabb;
 }
 
 .socials a {
     margin-right: 1rem;
-    color: #6a5b3e;
+    color: var(--A6);
     font-size: 1rem;
 }
 
@@ -103,40 +155,25 @@ body {
 }
 
 .section-links a {
-    background: rgb(255,188,66);
-    background: linear-gradient(0deg, rgba(255,188,66,1) 7%, rgba(255,227,161,1) 38%, rgba(246,248,247,1) 81%);
+    background: linear-gradient(0deg, var(--A3) 7%, var(--A7) 38%, var(--B5) 81%);
     border-radius: 5px;
     font-weight: 700;
     margin: 0.5rem 0;
     padding: .5rem 1rem;
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07)
-        ;
+    box-shadow: var(--unpressed-shadow);
 
 }
 
 .section-links a:hover {
     cursor: pointer;
-    color: #00ccfe;
+    color: var(--C2);
 }
 
 .section-links a:active {
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow:
-        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
-        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
-        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
-        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
-        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
-        21px 25px 80px rgba(0, 0, 0, 0.3)
-        ;
+    box-shadow: var(--pressed-shadow);
 
 }
 
@@ -174,7 +211,7 @@ body {
 
     .title {
         font-size: 2.5rem;
-        text-shadow: 4px 4px white;
+        text-shadow: 4px 4px var(--B5);
         margin: 0.5rem 0 1rem 0;
     }
 
@@ -224,45 +261,29 @@ body {
 .about-text {
     margin: 0;
     margin-bottom: 1rem;
-    color: black;
     font-size: 16px;
 }
 
 .about-content strong {
-    color: #4f7b8a;
+    color: var(--C3);
 }
 
 .about-content a {
     text-decoration: none;
-    color: black;
-    background: rgb(0,204,254);
-    background: linear-gradient(0deg, rgba(0,204,254,1) 0%, rgba(174,224,251,1) 40%, rgba(246,248,247,1) 89%);
+    color: var(--B3);
+    background: linear-gradient(0deg, var(--C2) 0%, var(--C9) 40%, var(--B5) 89%);
     font-weight: 700;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     width: fit-content;
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07)
-        ;
+    box-shadow: var(--unpressed-shadow);
 }
 
 .about-content a:active {
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow:
-        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
-        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
-        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
-        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
-        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
-        21px 25px 80px rgba(0, 0, 0, 0.3)
-        ;
+    box-shadow: var(--pressed-shadow);
 
 }
 
@@ -273,14 +294,14 @@ body {
 
 .highlights-container div {
     margin-top: 1rem;
-    background: white;
+    background: var(--B5);
     border-radius: 5px;
     padding: 0.5rem 1rem;
     height: fit-content;
 }
 
 .highlights-container p {
-    border-bottom: 1px solid #d4c183;
+    border-bottom: 1px solid var(--A9);
 }
 
 .highlights-container div ul li{
@@ -421,7 +442,7 @@ body {
 .project {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
-    background: white;
+    background: var(--B5);
     border-radius: 5px;
 }
 
@@ -442,7 +463,7 @@ body {
 }
 
 .secret-code-container {
-    background: #dbe9ef;
+    background: var(--C4);
     border-radius: 10px;
     margin-bottom: 2rem;
     text-align: center;
@@ -455,12 +476,12 @@ body {
 
 .secret-code-title span {
     font-weight: 700;
-    text-shadow: 2px 2px #ffbc42;
+    text-shadow: 2px 2px var(--A3);
 }
 
 .secret-code {
     padding: 1rem;
-    background: white;
+    background: var(--B5);
     border-radius: 5px;
 }
 
@@ -472,33 +493,19 @@ body {
 
 .link-container a {
     font-weight: 700;
-    color: black;
+    color: var(--B3);
     border-radius: 5px;
     text-decoration: none;
-    background: #ffeba2;
-    background: linear-gradient(0deg, #ffbc42 17%, #ffeba2 89%);
+    background: linear-gradient(0deg, var(--A3) 17%, var(--A7) 89%);
     padding: 0.5rem 1rem;
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--unpressed-shadow);
 }
 
 .link-container a:active {
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow:
-        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
-        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
-        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
-        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
-        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
-        21px 25px 80px rgba(0, 0, 0, 0.3)
-        ;
+    box-shadow: var(--pressed-shadow);
 }
 
 .link-container .link-code {
@@ -591,7 +598,7 @@ body {
     height: fit-content;
     border-radius: 5px;
     padding: 2rem 1rem;
-    background: white;
+    background: var(--B5);
 }
 
 .form input,
@@ -599,7 +606,8 @@ body {
     margin-bottom: 1rem;
     box-sizing: border-box;
     width: 100%;
-    background: #b0a372;
+    background: var(--A8);
+    color: var(--B5);
     border: none;
     border-radius: 5px;
     padding: 0.5rem 0.5rem;
@@ -611,7 +619,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: white;
+    color: var(--B5);
 }
 
 .form .form-message {
@@ -624,20 +632,13 @@ body {
     margin-top: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
-    background: rgb(0,204,254);
-    background: linear-gradient(0deg, rgba(0,204,254,1) 9%, rgba(174,224,251,1) 62%);
-    box-shadow:
-    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-    100px 100px 80px rgba(0, 0, 0, 0.07);
+    background: linear-gradient(0deg, var(--C2) 9%, var(--C9) 62%);
+    box-shadow: var(--unpressed-shadow);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     border: none;
-    color: black;
+    color: var(--B3);
 }
 
 .form button:hover {
@@ -648,14 +649,7 @@ body {
     position: relative;
     top: 3px;
     left: 3px;
-    box-shadow:
-        0.6px 0.7px 2.2px rgba(0, 0, 0, 0.084),
-        1.4px 1.7px 5.3px rgba(0, 0, 0, 0.121),
-        2.6px 3.1px 10px rgba(0, 0, 0, 0.15),
-        4.7px 5.6px 17.9px rgba(0, 0, 0, 0.179),
-        8.8px 10.4px 33.4px rgba(0, 0, 0, 0.216),
-        21px 25px 80px rgba(0, 0, 0, 0.3)
-        ;
+    box-shadow: var(--pressed-shadow);
 }
 
 .contact-container .images-container {
