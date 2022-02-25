@@ -1,6 +1,12 @@
 import React from "react"
 import dev from "../images/dev.png"
 import desk from "../images/desk.png"
+import screenTopTan from "../images/screen_top_tan.png"
+import screenTopBlack from "../images/screen_top_black.png"
+import screenRightTan from "../images/screen_right_tan.png"
+import screenRightDarkGray from "../images/screen_right_darkgray.png"
+import screenRightLightGray from "../images/screen_right_lightgray.png"
+import screenLeftBottom from "../images/screen_left_bottom.png"
 import {Link} from "react-scroll"
 
 export default function Hero() {
@@ -17,7 +23,13 @@ export default function Hero() {
             </div>
             <div className="images-container">
                 <img className="desk" src={desk} alt="desk"></img>
-                <img className="dev" src={dev} alt="dev"></img>
+                <img className="screenTopTan" src={screenTopTan} alt="screenTopTan"></img>
+                <img className="screenTopBlack" src={screenTopBlack} alt="screenTopBlack"></img>
+                <img className="screenRightTan" src={screenRightTan} alt="screenRightTan"></img>
+                <img className="screenRightDarkGray" src={screenRightDarkGray} alt="screenRightDarkGray"></img>
+                <img className="screenRightLightGray" src={screenRightLightGray} alt="screenRightLightGray"></img>
+                <img className="screenLeftBottom" src={screenLeftBottom} alt="screenLeftBottom"></img>
+                <img className="dev" src={dev} alt="a dev"></img>
             </div>
             <div className="section-links">
                 <Link className="section-link" to="about-container" smooth={true} duration={1000}>About</Link>
