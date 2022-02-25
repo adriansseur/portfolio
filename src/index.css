@@ -149,8 +149,28 @@ body {
     animation: hoverDesk 3s ease-in-out 0s infinite alternate;
 }
 
-.dev {
+.devEyebrows,
+.devHead,
+.devLeftArm,
+.devRightArm,
+.devBody {
     animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
+}
+
+.devEyebrows {
+    animation: moveEyebrows 2.5s ease-in-out 0s infinite alternate;
+}
+
+.screenLeftBottom {
+    animation: moveScreenLeftBottom 3s ease-in-out 0s infinite alternate;
+}
+
+.screenRightLightGray {
+    animation: moveScreenRightLightGray 3s ease-in-out 0s infinite alternate;
+}
+
+.screenRightDarkGray {
+    animation: moveScreenRightDarkGray 3s ease-in-out 0s infinite alternate;
 }
 
 .section-links {
@@ -191,6 +211,31 @@ body {
 
 @keyframes hoverDesk {
     to {transform: translateX(10px)}
+}
+
+@keyframes moveEyebrows {
+    0% {transform: rotate(5deg)}
+    40% {transform: translate(20px, -25px)}
+    50% {transform: translate(20px, -30px)}
+    90% {transform: translate(0px, -15px)}
+    100% {transform: rotate(-5deg)}
+}
+
+@keyframes moveScreenLeftBottom {
+    50% {opacity : 1}
+    70% {opacity: 0}
+    100% {transform: translateX(10px)}
+}
+
+@keyframes moveScreenRightLightGray {
+    80% {opacity: 1}
+    100% {transform: translateX(10px); opacity: 0}
+   }
+
+@keyframes moveScreenRightDarkGray {
+    10% {opacity : 1}
+    20% {opacity: 0}
+    100% {transform: translateX(10px)}
 }
 
 /* tablet */
