@@ -19,5 +19,12 @@ export default [
         description: `A better version of a further reading page from a renowned channel.`,
         codeLink: `https://github.com/adriansseur/YouTube-Video-Sources`,
         demoLink: `https://adriansseur.github.io/YouTube-Video-Sources/`
+    },
+    {
+        name: `E-Commerce Site`,
+        screenshot: `/screenshots/e-commerce-site.png`,
+        description: `A store for my family's farm. Still under development.`,
+        codeLink: `https://github.com/adriansseur/e-commerce-site`,
+        demoLink: `https://adriansseur.github.io/e-commerce-site/`
     }
 ]
