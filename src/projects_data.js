@@ -24,7 +24,7 @@ export default [
         name: `E-Commerce Site`,
         screenshot: `/screenshots/e-commerce-site.png`,
         description: `A store for my family's farm. Still under development.`,
-        codeLink: `https://github.com/adriansseur/e-commerce-site`,
+        codeLink: `https://github.com/adriansseur/e-commerce-site/tree/gh-pages`,
         demoLink: `https://adriansseur.github.io/e-commerce-site/`
     }
 ]
