@@ -27,10 +27,10 @@ export default function About() {
                     <div className="tech-stack">
                         <p>Tech Stack</p>
                         <ul className="tech-stack-grid">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
                             <li>React</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
                             <li>Git</li>
                             <li>APIs</li>
                             <li>Responsive</li>
