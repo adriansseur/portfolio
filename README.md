@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to the to my Front End Developer Portfolio repo. Visit the deployment of this site [adriansseur.github.io](https://adriansseur.github.io) to see my projects.
+Welcome to my Front End Developer Portfolio repo. Visit the deployment of this site [adriansseur.github.io](https://adriansseur.github.io) to see my projects.
 
 ## Motivation
 
