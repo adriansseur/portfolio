@@ -14,7 +14,10 @@ export default function About() {
         <div className="about-container" id="about-container">
             <h1>About</h1>
             <div className="about-content">
-                <p className="about-text">I am <strong>highly motivated</strong> and <strong>great in a group</strong>. I like science, coffee, and chocolate chip cookies. </p>
+                <p className="about-text">
+                    I'm a Front End Developer located in Irving, Texas. Digital screens are canvases and organizing pixels on them is my art.
+                    <br /><br />
+                    I am <strong>highly motivated</strong> and <strong>great in a group</strong>. I like science, coffee, and chocolate chip cookies. </p>
                 <a href={resume} download>Resume</a>
                 <div className="highlights-container">
                     <div className="education">

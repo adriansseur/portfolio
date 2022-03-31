@@ -1,5 +1,4 @@
 import React from "react"
-import dev from "../images/dev.png"
 import desk from "../images/desk.png"
 import screenTopTan from "../images/screen_top_tan.png"
 import screenTopBlack from "../images/screen_top_black.png"
@@ -43,9 +42,9 @@ export default function Hero() {
                 <img className="keyboard" src={keyboard} alt="keyboard"></img>
             </div>
             <div className="section-links">
-                <Link className="section-link" to="about-container" smooth={true} duration={1000}>About</Link>
-                <Link className="section-link" to="projects-container" smooth={true} duration={1000}>Projects</Link>
-                <Link className="section-link" to="contact-container" smooth={true} duration={1000}>Contact</Link>
+                <Link to="about-container" smooth={true} duration={1000}>About</Link>
+                <Link to="projects-container" smooth={true} duration={1000}>Projects</Link>
+                <Link to="contact-container" smooth={true} duration={1000}>Contact</Link>
             </div>
         </div>
     )

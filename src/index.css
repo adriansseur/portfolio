@@ -50,11 +50,10 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: var(--B6)
 }
 
 .portfolio-container {
-    margin: 0;
+    margin: 10%;
 }
 
 .hero-container,
@@ -64,7 +63,6 @@ body {
     margin: auto;
     max-width: 1350px;
     min-height: 100vh;
-    padding: 0 10%;
 }
 
 .about-container,
@@ -72,16 +70,6 @@ body {
 .contact-container {
     display: flex;
     flex-direction: column;
-}
-
-.hero-container,
-.projects-container {
-    background: var(--C9);
-}
-
-.about-container,
-.contact-container {
-    background: var(--A7);
 }
 
 @media (min-width: 768px) {
@@ -100,7 +88,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
+    /* justify-content: center; */
+    position: relative;
+
 }
 
 .name,
@@ -115,18 +105,51 @@ body {
 
 .title {
     margin: 0.25rem 0;
-    font-size: 28px;
+    font-size: 2rem;
     text-shadow: 2px 2px #aebabb;
 }
 
 .socials a {
+    display: inline-block;
     margin-right: 1rem;
     color: var(--A6);
-    font-size: 1rem;
+    font-size: 1.25rem;
+    box-shadow: var(--unpressed-shadow);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 0.25rem;
+    cursor: pointer;
+    border: 1px solid;
+    position: relative;
+}
+
+.socials a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socials a:focus {
+    background: var(--B7);
+    outline: none;
+}
+
+.socials a:hover {
+    background: var(--B7);
+}
+
+.socials a:active {
+    background: var(--B5);
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: var(--pressed-shadow);
 }
 
 .hero-container .images-container {
-    margin-top: 3rem;
+    margin: 2rem 0;
     align-self: center;
     position: relative;
     display: inline-block;
@@ -139,42 +162,8 @@ body {
     position: absolute;
 }
 
-.desk,
-.screenTopTan,
-.screenTopBlack,
-.screenRightTan,
-.screenRightDarkGray,
-.screenRightLightGray,
-.screenLeftBottom {
-    animation: hoverDesk 3s ease-in-out 0s infinite alternate;
-}
-
-.devEyebrows,
-.devHead,
-.devLeftArm,
-.devRightArm,
-.devBody {
-    animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
-}
-
-.devEyebrows {
-    animation: moveEyebrows 2.5s ease-in-out 0s infinite alternate;
-}
-
-.screenLeftBottom {
-    animation: moveScreenLeftBottom 3s ease-in-out 0s infinite alternate;
-}
-
-.screenRightLightGray {
-    animation: moveScreenRightLightGray 3s ease-in-out 0s infinite alternate;
-}
-
-.screenRightDarkGray {
-    animation: moveScreenRightDarkGray 3s ease-in-out 0s infinite alternate;
-}
-
 .section-links {
-    margin-top: 8vh;
+    margin-top: 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -200,7 +189,40 @@ body {
     top: 3px;
     left: 3px;
     box-shadow: var(--pressed-shadow);
+}
 
+.section-links a:focus {
+    background: var(--B7);
+}
+
+.desk,
+.screenTopTan,
+.screenTopBlack,
+.screenRightTan,
+.screenRightDarkGray,
+.screenRightLightGray,
+.screenLeftBottom {
+    animation: hoverDesk 3s ease-in-out 0s infinite alternate;
+}
+
+.devEyebrows,
+.devHead,
+.devLeftArm,
+.devRightArm,
+.devBody {
+    animation: hoverChair 2.5s ease-in-out 0s infinite alternate;
+}
+
+.screenLeftBottom {
+    animation: moveScreenLeftBottom 3s ease-in-out 0s infinite alternate;
+}
+
+.screenRightLightGray {
+    animation: moveScreenRightLightGray 3s ease-in-out 0s infinite alternate;
+}
+
+.screenRightDarkGray {
+    animation: moveScreenRightDarkGray 3s ease-in-out 0s infinite alternate;
 }
 
 @keyframes hoverChair {
