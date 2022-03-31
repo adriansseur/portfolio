@@ -1,5 +1,6 @@
 export default [
     {
+        key: 1,
         name: `Study Tool`,
         screenshot: `/screenshots/study-tool.png`,
         description: `A whiteboard to track your studies for a medical school admissions test.`,
@@ -7,6 +8,7 @@ export default [
         demoLink: `https://adriansseur.github.io/Study-Tool/`
     },
     {
+        key: 2,
         name: `Word Game`,
         screenshot: `/screenshots/word-game.png`,
         description: `Try to read obscure words from a medical dictionary.`,
@@ -14,6 +16,7 @@ export default [
         demoLink: `https://adriansseur.github.io/Word-Game/`
     },
     {
+        key: 3,
         name: `YouTube Video Sources`,
         screenshot: `/screenshots/yt-video-sources.png`,
         description: `A better version of a further reading page from a renowned channel.`,
@@ -21,6 +24,7 @@ export default [
         demoLink: `https://adriansseur.github.io/YouTube-Video-Sources/`
     },
     {
+        key: 4,
         name: `E-Commerce Site`,
         screenshot: `/screenshots/e-commerce-site.png`,
         description: `A store for my family's farm. Still under development.`,

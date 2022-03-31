@@ -22,10 +22,10 @@ export default function Hero() {
             <p className="name">Hello, I'm Adrian</p>
             <h1 className="title">Front-End Developer</h1>
             <div className="socials">
-                <a href="https://www.linkedin.com/in/adrian-lugo-820389223/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/adriansseur" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/adriansseur" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCjBO_Yz33-oZygrgQmqECIg" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/adrian-lugo-820389223/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/adriansseur" target="_blank"><i className="fab fa-github"></i></a>
+                <a href="https://twitter.com/adriansseur" target="_blank"><i className="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCjBO_Yz33-oZygrgQmqECIg" target="_blank"><i className="fab fa-youtube"></i></a>
             </div>
             <div className="images-container">
                 <img className="desk" src={desk} alt="desk"></img>
