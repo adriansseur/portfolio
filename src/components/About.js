@@ -15,13 +15,13 @@ export default function About() {
             <h1>About</h1>
             <div className="about-content">
                 <p className="about-text">
-                    I'm a Front End Developer located in Irving, Texas. Digital screens are canvases and organizing pixels on them is my art.
+                    I'm a Front End Developer located in Irving, Texas. Digital screens are my canvases and arranging pixels is my art.
                     <br /><br />
                     I am <strong>highly motivated</strong> and <strong>great in a group</strong>. I like science, coffee, and chocolate chip cookies. </p>
                 <a href={resume} download>Resume</a>
                 <div className="highlights-container">
                     <div className="education">
-                        <p>Education</p>
+                        <p>Relevant Education</p>
                         <ul>
                             <li>Scrimba's Front-End Developer Career Path</li>
                             <li>Bachelor's Degree</li>
@@ -38,6 +38,10 @@ export default function About() {
                             <li>APIs</li>
                             <li>Responsive</li>
                             <li>UI Design</li>
+                            <li>Typescript</li>
+                            <li>Sass</li>
+                            <li>GSAP</li>
+                            <li>Barba</li>
                         </ul>
                     </div>
                 </div>

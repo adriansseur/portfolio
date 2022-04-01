@@ -18,7 +18,6 @@ export default function Contact() {
                     <input type="text" name="name" required placeholder="Name"></input>
                     <input type="email" name="email" required placeholder="Email Address"></input>
                     <textarea className="form-message" type="text" name="message" required placeholder="Message"></textarea>
-                    {/* <input type="hidden" name="_next" value="https://adriansseur.github.io"></input> */}
                     <button type="submit">Submit</button>
                 </form>
             </div>
