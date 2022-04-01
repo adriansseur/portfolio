@@ -47,6 +47,9 @@
                     21px 25px 80px rgba(0, 0, 0, 0.3);
     --global-margin: 7vh;
     --laptop-font-size: 1.25rem;
+    --laptop-btn-width: 10rem;
+    --laptop-btn-height: 4rem;
+    --laptop-btn-border-radius: 20px;
 }
 
 body {
@@ -78,19 +81,6 @@ body {
 .about-container,
 .projects-container {
     margin-bottom: var(--global-margin);
-}
-
-/* tablet */
-@media (min-width: 768px) {
-    .portfolio-container {
-        margin: calc(var(--global-margin)*2);
-    }
-
-    .hero-container,
-    .about-container,
-    .projects-container {
-        margin-bottom: calc(var(--global-margin)*2);
-    }
 }
 
 /* HERO -----------------------------------------*/
@@ -190,7 +180,6 @@ body {
     margin: 0.25rem 0;
     padding: .5rem 1rem;
     box-shadow: var(--unpressed-shadow);
-
 }
 
 .section-links a:hover {
@@ -789,5 +778,63 @@ body {
     .form textarea::placeholder,
     .form button {
         font-size: 1.25rem;
+    }
+}
+
+/* MULTIPLE */
+
+/* tablet */
+@media (min-width: 768px) {
+    .portfolio-container {
+        margin: calc(var(--global-margin)*2);
+    }
+
+    .hero-container,
+    .about-container,
+    .projects-container {
+        margin-bottom: calc(var(--global-margin)*2);
+    }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+    .section-links a,
+    .about-content a,
+    .link-container a,
+    .form button {
+        width: var(--laptop-btn-width);
+        height: var(--laptop-btn-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--laptop-btn-border-radius);
+        transition: all 0.25s;
+    }
+    
+    .section-links a:hover,
+    .about-content a:hover,
+    .link-container a:hover,
+    .form button:hover {
+        transform: scale(1.25);
+        background: var(--B7);
+        color: black;
+    }
+    
+    .section-links a:active,
+    .about-content a:active,
+    .link-container a:active,
+    .form button:active {
+        transform: scale(0.9);
+        background: var(--B4);
+        top: 0px;
+        left: 0px;
+        box-shadow: var(--pressed-shadow);
+    }
+    
+    .section-links a:focus,
+    .about-content a:focus,
+    .link-container a:focus,
+    .form button:focus {
+        background: var(--B7);
     }
 }
