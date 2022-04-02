@@ -94,7 +94,7 @@ body {
 
 .name,
 .title {
-    color: var(-B3)
+    color: var(-B3);
 }
 
 .name {
@@ -147,7 +147,7 @@ body {
     box-shadow: var(--pressed-shadow);
 }
 
-.hero-container .images-container {
+.hero-container .hero-images-container {
     margin: 2rem 0;
     align-self: center;
     position: relative;
@@ -294,7 +294,7 @@ body {
         grid-row-start: 5;
     }
 
-    .hero-container .images-container {
+    .hero-container .hero-images-container {
         margin: 0;
         min-width: 30vw;
         min-height: 40vw;
@@ -302,7 +302,10 @@ body {
         grid-row-end: -1;
         grid-column-start: 2;
         margin-left: auto;
-        transform: translateY(-10%);
+    }
+
+    .section-links {
+        flex-wrap: nowrap;
     }
 }
 
@@ -316,11 +319,6 @@ body {
 
     .title {
         font-size: 2.5rem;
-    }
-
-    .hero-container .images-container {
-        min-width: 600px;
-        min-height: 600px;
     }
 }
 
@@ -388,7 +386,7 @@ body {
 }
 
 .about-content .images-container {
-    margin: 2rem 0;
+    margin-top: 2rem;
     min-width: 100%;
     min-height: 50vw; /*this fixes collapsing div*/
     position: relative;
@@ -481,6 +479,10 @@ body {
     padding: 0.5rem 1rem;
     background: var(--B5);
     border-radius: 5px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
 }
 
 .screenshot {

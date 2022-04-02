@@ -12,12 +12,30 @@ import devHead from "../images/dev_head.png"
 import devLeftArm from "../images/dev_leftarm.png"
 import devRightArm from "../images/dev_rightarm.png"
 import devBody from "../images/dev_body.png"
-import {Link} from "react-scroll"
+import { Link } from "react-scroll"
+import {gsap} from "gsap"
 
-export default function Hero() {
+export default function Hero({ tl }) {
+
+    // animation
+    const heroContainer = React.useRef()
+    const heroChildren = gsap.utils.selector(heroContainer)
+    React.useEffect(() => {
+        if (window.innerWidth < 786) {
+            gsap.set(heroChildren([".name", ".title", ".socials a", ".hero-images-container", ".section-links a"]), {opacity: 0})
+            tl.fromTo(heroChildren(".name"),
+                { scale: 1, y: 200, x: -100 },
+                { scale: 2, x: 110, opacity: 1 })
+                .to(heroChildren(".name"), { x: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 })
+                .fromTo(heroChildren(".title"), { xPercent: -100 }, { xPercent: 0, duration: 0.5, opacity: 1 })
+                .fromTo(heroChildren(".socials a"), { y: 50 }, { y: 0, opacity: 1, stagger: 0.2 }, "<")
+                .fromTo(heroChildren(".hero-images-container"), { scale: 0.1 }, { scale: 1, opacity: 1 }, "<25%")
+                .fromTo(heroChildren(".section-links a"), {y: 100}, {y: 0, opacity: 1, stagger: 0.2}, "<")
+        }
+    }, [])
 
     return (
-        <div className="hero-container">
+        <div ref={heroContainer} className="hero-container">
             <p className="name">Hello, I'm Adrian</p>
             <h1 className="title">Front-End Developer</h1>
             <div className="socials">
@@ -26,7 +44,7 @@ export default function Hero() {
                 <a href="https://twitter.com/adriansseur" target="_blank"><i className="fab fa-twitter"></i></a>
                 <a href="https://www.youtube.com/channel/UCjBO_Yz33-oZygrgQmqECIg" target="_blank"><i className="fab fa-youtube"></i></a>
             </div>
-            <div className="images-container">
+            <div className="hero-images-container">
                 <img className="desk" src={desk} alt="desk"></img>
                 <img className="screenTopTan" src={screenTopTan} alt="screenTopTan"></img>
                 <img className="screenTopBlack" src={screenTopBlack} alt="screenTopBlack"></img>
