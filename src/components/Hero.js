@@ -15,15 +15,16 @@ import devBody from "../images/dev_body.png"
 import { Link } from "react-scroll"
 import {gsap} from "gsap"
 
-export default function Hero({ tl }) {
+export default function Hero() {
 
-    // animation
+    // hero animation when page loads
+    const heroTl = gsap.timeline({defaults: {duration: 1, ease: "back.inOut(3)"}})
     const heroContainer = React.useRef()
     const heroChildren = gsap.utils.selector(heroContainer)
     React.useEffect(() => {
         if (window.innerWidth < 786) {
             gsap.set(heroChildren([".name", ".title", ".socials a", ".hero-images-container", ".section-links a"]), {opacity: 0})
-            tl.fromTo(heroChildren(".name"),
+            heroTl.fromTo(heroChildren(".name"),
                 { scale: 1, y: 200, x: -100 },
                 { scale: 2, x: 110, opacity: 1 })
                 .to(heroChildren(".name"), { x: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 })

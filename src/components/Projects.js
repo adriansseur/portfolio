@@ -1,7 +1,31 @@
 import React from "react"
 import data from "../projects_data"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Projects() {
+
+    // projects animation on scroll
+    const projectsContainer = React.useRef()
+    const projectsChildren = gsap.utils.selector(projectsContainer)
+    const projectsTl = gsap.timeline({
+        scrollTrigger: {
+            start: "25%",
+            end: "70%",
+            scrub: true,
+            ease: "back.inOut(3)"
+        }
+    })
+    
+    React.useEffect(() => {
+        if (window.innerWidth < 786) {
+            gsap.set(projectsChildren([".projects-title", ".project"]), { opacity: 0})
+            projectsTl
+                .fromTo(projectsChildren([".projects-title", ".project"]), { x: -50 }, { x: 0, opacity: 1, stagger: 0.5 })
+                .fromTo(projectsChildren([".project"]), {backgroundColor: "#f6f8f7"}, {backgroundColor: "#cdd2d3", stagger: 0.5, ease: "none", delay: 0.2 }, "<")
+        }
+    }, [])
 
     const projectElements = data.map(project => {
         return (
@@ -28,8 +52,8 @@ export default function Projects() {
     })
 
     return (
-        <div className="projects-container" id="projects-container">
-            <h1>Projects</h1>
+        <div ref={projectsContainer} className="projects-container" id="projects-container">
+            <h1 className="projects-title">Projects</h1>
             <div className="projects-content">
                 {projectElements}
             </div>

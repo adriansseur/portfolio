@@ -385,7 +385,7 @@ body {
     margin: 0.5rem 0;
 }
 
-.about-content .images-container {
+.about-images-container {
     margin-top: 2rem;
     min-width: 100%;
     min-height: 50vw; /*this fixes collapsing div*/
@@ -428,7 +428,7 @@ body {
         justify-self: center;
     }
 
-    .about-container .images-container {
+    .about-images-container {
         grid-row-start: 1;
         min-height: 0;
         height: 25vw;
@@ -691,7 +691,7 @@ body {
     box-shadow: var(--pressed-shadow);
 }
 
-.contact-container .images-container {
+.contact-images-container {
     margin-top: 4rem;
     margin-bottom: 1rem;
     position: relative;
@@ -702,7 +702,7 @@ body {
     align-items: center;
 }
 
-.contact-container .images-container img {
+.contact-images-container img {
     width: 250px;
     position: absolute;
 }
@@ -757,20 +757,20 @@ body {
         grid-column-end: -1;
     }
 
-    .contact-container .images-container {
+    .contact-images-container {
         min-height: 0;
         max-width: 400px;
         margin: 0;
         align-items: flex-end;
     }
-    .contact-container .images-container img {
+    .contact-images-container img {
         width: 100%;
     }
 }
 
 @media (min-width: 1024px) {
 
-    .contact-container .images-container {
+    .contact-images-container {
         margin-left: auto;
     }
 
