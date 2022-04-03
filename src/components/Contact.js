@@ -18,8 +18,8 @@ export default function Contact() {
     const contactChildren = gsap.utils.selector(contactContainer)
     const contactTl = gsap.timeline({
         scrollTrigger: {
-            start: "76%",
-            end: "86%",
+            start: "70%",
+            end: "80%",
             scrub: true,
             ease: "back.inOut(3)"
         }
