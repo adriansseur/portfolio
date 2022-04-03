@@ -21,8 +21,7 @@ export default function Contact() {
             start: "76%",
             end: "86%",
             scrub: true,
-            ease: "back.inOut(3)",
-            markers: true
+            ease: "back.inOut(3)"
         }
     })
     
