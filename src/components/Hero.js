@@ -22,16 +22,22 @@ export default function Hero() {
     const heroContainer = React.useRef()
     const heroChildren = gsap.utils.selector(heroContainer)
     React.useEffect(() => {
-        if (window.innerWidth < 786) {
+        if (window.innerWidth < 768) {
             gsap.set(heroChildren([".name", ".title", ".socials a", ".hero-images-container", ".section-links a"]), {opacity: 0})
-            heroTl.fromTo(heroChildren(".name"),
-                { scale: 1, y: 200, x: -100 },
-                { scale: 2, x: 110, opacity: 1 })
-                .to(heroChildren(".name"), { x: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 })
-                .fromTo(heroChildren(".title"), { xPercent: -100 }, { xPercent: 0, duration: 0.5, opacity: 1 })
-                .fromTo(heroChildren(".socials a"), { y: 50 }, { y: 0, opacity: 1, stagger: 0.2 }, "<")
-                .fromTo(heroChildren(".hero-images-container"), { scale: 0.1 }, { scale: 1, opacity: 1 }, "<25%")
-                .fromTo(heroChildren(".section-links a"), {y: 100}, {y: 0, opacity: 1, stagger: 0.2}, "<")
+            heroTl
+                .fromTo(heroChildren(".name"),
+                    { scale: 1, y: 200, xPercent: -50 },
+                    { scale: 2, xPercent: 50, opacity: 1 })
+                .to(heroChildren(".name"),
+                    { xPercent: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 })
+                .fromTo(heroChildren(".title"),
+                    { xPercent: -100 }, { xPercent: 0, duration: 0.5, opacity: 1 })
+                .fromTo(heroChildren(".socials a"),
+                    { y: 50 }, { y: 0, opacity: 1, stagger: 0.2 }, "<")
+                .fromTo(heroChildren(".hero-images-container"),
+                    { scale: 0.1 }, { scale: 1, opacity: 1 }, "<25%")
+                .fromTo(heroChildren(".section-links a"),
+                    { y: 100 }, { y: 0, opacity: 1, stagger: 0.2 }, "<")
         }
     }, [])
 

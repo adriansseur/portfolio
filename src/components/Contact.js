@@ -26,7 +26,7 @@ export default function Contact() {
     })
     
     React.useEffect(() => {
-        if (window.innerWidth < 786) {
+        if (window.innerWidth < 768) {
             gsap.set(contactChildren([".contact-title", ".form", ".contact-images-container"]), { opacity: 0})
             contactTl
                 .fromTo(contactChildren(".contact-title"), { x: 50 }, { x: 0, opacity: 1})

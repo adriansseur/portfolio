@@ -19,7 +19,7 @@ export default function Projects() {
     })
     
     React.useEffect(() => {
-        if (window.innerWidth < 786) {
+        if (window.innerWidth < 768) {
             gsap.set(projectsChildren([".projects-title", ".project"]), { opacity: 0})
             projectsTl
                 .fromTo(projectsChildren([".projects-title", ".project"]), { x: -50 }, { x: 0, opacity: 1, stagger: 0.5 })

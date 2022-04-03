@@ -170,7 +170,7 @@ body {
 }
 
 .section-links a:nth-child(2) {
-    margin: 0 1rem;
+    margin: 0.25rem 1rem;
 }
 
 .section-links a {
@@ -269,7 +269,7 @@ body {
     .hero-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto 400px;
+        grid-template-rows: auto auto auto auto minmax(10rem, 15rem) auto;
     }
 
     .hero-container .name {

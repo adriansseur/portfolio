@@ -26,7 +26,7 @@ export default function About() {
     })
     
     React.useEffect(() => {
-        if (window.innerWidth < 786) {
+        if (window.innerWidth < 768) {
             gsap.set(aboutChildren([".about-title", ".about-text", ".resume-btn", ".education", ".tech-stack", ".about-images-container"]), { opacity: 0 })
             aboutTl.fromTo(aboutChildren([".about-title", ".about-text", ".resume-btn", ".education", ".tech-stack", ".about-images-container"]), {x: 50}, {x: 0, opacity: 1, stagger: 0.5})
         }
