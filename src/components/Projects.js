@@ -17,9 +17,10 @@ export default function Projects() {
             ease: "back.inOut(3)"
         }
     })
-    
     React.useEffect(() => {
-        if (window.innerWidth < 768) {
+        // animation runs only on mobile portrait
+        // but if window is resized and page not refreshed, mobile landscape animates
+        if (window.innerWidth < 768 && !(window.innerWidth > window.innerHeight)) {
             gsap.set(projectsChildren([".projects-title", ".project"]), { opacity: 0})
             projectsTl
                 .fromTo(projectsChildren([".projects-title", ".project"]), { x: -50 }, { x: 0, opacity: 1, stagger: 0.5 })

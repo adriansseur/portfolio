@@ -22,7 +22,9 @@ export default function Hero() {
     const heroContainer = React.useRef()
     const heroChildren = gsap.utils.selector(heroContainer)
     React.useEffect(() => {
-        if (window.innerWidth < 768) {
+        // animation runs only on mobile portrait
+        // but if window is resized and page not refreshed, mobile landscape animates
+        if (window.innerWidth < 768 && !(window.innerWidth > window.innerHeight)) {
             gsap.set(heroChildren([".name", ".title", ".socials a", ".hero-images-container", ".section-links a"]), {opacity: 0})
             heroTl
                 .fromTo(heroChildren(".name"),

@@ -24,9 +24,10 @@ export default function About() {
             ease: "back.inOut(3)"
         }
     })
-    
     React.useEffect(() => {
-        if (window.innerWidth < 768) {
+        // animation runs only on mobile portrait
+        // but if window is resized and page not refreshed, mobile landscape animates
+        if (window.innerWidth < 768 && !(window.innerWidth > window.innerHeight)) {
             gsap.set(aboutChildren([".about-title", ".about-text", ".resume-btn", ".education", ".tech-stack", ".about-images-container"]), { opacity: 0 })
             aboutTl.fromTo(aboutChildren([".about-title", ".about-text", ".resume-btn", ".education", ".tech-stack", ".about-images-container"]), {x: 50}, {x: 0, opacity: 1, stagger: 0.5})
         }
