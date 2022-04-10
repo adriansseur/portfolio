@@ -568,7 +568,7 @@ body {
 
     .projects-content {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
 
@@ -764,6 +764,10 @@ body {
     }
     .contact-images-container img {
         width: 100%;
+    }
+
+    .form {
+        padding: 2.5rem;
     }
 }
 

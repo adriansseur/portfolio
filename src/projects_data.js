@@ -30,5 +30,13 @@ export default [
         description: `A store for my family's farm. Still under development.`,
         codeLink: `https://github.com/adriansseur/e-commerce-site/tree/gh-pages`,
         demoLink: `https://adriansseur.github.io/e-commerce-site/`
+    },
+    {
+        key: 5,
+        name: `Banking App`,
+        screenshot: `/screenshots/banking-app.png`,
+        description: `A mock banking app where you can view your balance, deposit, and withdraw funds.`,
+        codeLink: `https://adriansseur.github.io/mv_frontend_challenge_1/`,
+        demoLink: `https://github.com/adriansseur/mv_frontend_challenge_1`
     }
 ]
