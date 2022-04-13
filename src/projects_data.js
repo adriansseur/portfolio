@@ -20,7 +20,7 @@ export default [
         name: `YouTube Video Sources`,
         screenshot: `/screenshots/yt-video-sources.png`,
         description: `A better version of a further reading page from a renowned channel.`,
-        codeLink: `https://github.com/adriansseur/YouTube-Video-Sources`,
+        codeLink: `https://github.com/adriansseur/YouTube-Video-Sources/tree/main`,
         demoLink: `https://adriansseur.github.io/YouTube-Video-Sources/`
     },
     {
