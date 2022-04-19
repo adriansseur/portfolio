@@ -1,4 +1,5 @@
 # Portfolio Website
+<img width="200px" src="./screenshot.png" alt="screenshot of my portfolio website">
 
 Welcome to my Front End Developer Portfolio repo. Visit the deployment of this site [adriansseur.github.io](https://adriansseur.github.io) to see my projects.
 
@@ -8,9 +9,8 @@ I built this portfolio to show potential employers what I can do using front end
 
 ## Description
 
-Built using React, React Scroll, and custom animated drawings made by me.
+Built using React, React Scroll, and custom animated drawings and animations made by me.
 
 ## Further Work
 
-I plan on improving the styling by using tools such as Tailwind or Bootstrap, which I will be learning soon. I 
-
+I plan on making a second version eventually.
