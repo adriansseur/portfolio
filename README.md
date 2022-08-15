@@ -1,7 +1,7 @@
 # Portfolio Website
 <img width="200px" src="./screenshot.png" alt="screenshot of my portfolio website">
 
-Welcome to my Front End Developer Portfolio repo. Visit the deployment of this site [adriansseur.github.io](https://adriansseur.github.io) to see my projects.
+Welcome to my Front End Developer Portfolio repo. Visit the deployment of this site [adriansseur.github.io/portfolio](https://adriansseur.github.io/portfolio) to see my projects.
 
 ## Motivation
 
